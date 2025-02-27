@@ -89,7 +89,22 @@ header {
 .img-container img {
     width: 100%;
     opacity: 0.8;
-    transform: rotate(15deg);
+
+    animation: slide-out-stretch 3s ease-out;
+}
+
+@keyframes slide-out-stretch {
+    0% {
+        transform: translateY(-18em);
+    }
+
+    50% {
+        transform: scale(0.8);
+        transform: rotate(100deg);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
 .container {
     background-color: var(--clr-ctn);
