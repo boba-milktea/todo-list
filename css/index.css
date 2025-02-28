@@ -85,7 +85,7 @@ header {
     width: 9em;
     margin: 0 auto;
     z-index: -1;
-    top: -7em;
+    top: -8em;
     left: 10em;
 }
 
@@ -136,7 +136,7 @@ input {
     padding: 1em;
     border-radius: 1em;
     border: 0.2em solid var(--clr-text);
-    width: 20em;
+    width: 18em;
 }
 
 input:focus {
@@ -194,6 +194,9 @@ form button {
 }
 
 @media screen and (min-width: 600px) {
+    .container {
+        max-width: 900px;
+    }
     .todo-card {
         max-width: 80%;
     }
@@ -202,9 +205,16 @@ form button {
         top: -4em;
         right: -20em;
     }
+
+    input {
+        width: 25em;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
     .todo-card {
         max-width: 70%;
     }
@@ -213,9 +223,16 @@ form button {
         top: -5em;
         right: -25em;
     }
+
+    input {
+        width: 28em;
+    }
 }
 
 @media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1600px;
+    }
     .todo-card {
         max-width: 80%;
     }
@@ -223,5 +240,8 @@ form button {
         width: 15em;
         top: -6em;
         right: -32em;
+    }
+    input {
+        width: 30em;
     }
 }
