@@ -5,7 +5,7 @@ const taskList = {
     tasks: [
         {
             uuid: 'b3418cd0-a624-412d-8982-d21c0797fb29',
-            text: 'review compound component',
+            text: 'study react router',
             completed: false
         }
     ]
@@ -40,8 +40,8 @@ const createHtmlEle = () => {
         htmlEle += `<li id="task-${task.uuid}" class=${
             task.completed ? 'completed' : ''
         }>
-            <p>${task.text.toLowerCase()}</p>
-             <div class="task">
+            ${task.text.toLowerCase()}
+             <div class="task-btns">
               <button class="edit-btn" data-edit=${task.uuid}>Edit
               </button>
               <button class="delete-btn" data-delete=${task.uuid}>Del

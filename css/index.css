@@ -38,6 +38,9 @@ h1 {
 
 p {
     line-height: 1.5;
+    max-width: 850px;
+    text-align: center;
+    padding: 0 1em;
 }
 
 button {
@@ -82,14 +85,14 @@ header {
     width: 9em;
     margin: 0 auto;
     z-index: -1;
-    top: -8em;
+    top: -7em;
     left: 10em;
 }
 
 .img-container img {
     width: 100%;
     opacity: 0.8;
-
+    transform: rotate(25deg);
     animation: slide-out-stretch 3s ease-out;
 }
 
@@ -124,7 +127,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    max-width: 25em;
 }
 
 input {
@@ -138,6 +141,10 @@ input {
 
 input:focus {
     outline: none;
+}
+
+form {
+    margin-bottom: 2em;
 }
 
 form button {
@@ -155,7 +162,7 @@ form button {
 }
 
 .task-list {
-    width: 90%;
+    width: 100%;
     list-style-type: none;
     font-weight: 600;
 }
@@ -188,7 +195,7 @@ form button {
 
 @media screen and (min-width: 600px) {
     .todo-card {
-        width: 70%;
+        max-width: 80%;
     }
     .img-container {
         width: 13em;
@@ -199,7 +206,7 @@ form button {
 
 @media screen and (min-width: 1200px) {
     .todo-card {
-        width: 60%;
+        max-width: 70%;
     }
     .img-container {
         width: 14em;
@@ -210,7 +217,7 @@ form button {
 
 @media screen and (min-width: 1600px) {
     .todo-card {
-        width: 55%;
+        max-width: 80%;
     }
     .img-container {
         width: 15em;
